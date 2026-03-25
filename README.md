@@ -14,15 +14,17 @@ cats-sketch-gan/
 ├── data/
 │   ├── raw/
 │   │   └── cats_photos/
+|   |   └── cats_sketches/
+|   |   └── cats_test/
 │   │
 │   ├── processed/
-│   │   ├── train/
-│   │   │   └── AB/   ← imágenes lado a lado
+│   │   ├── train/  
 │   │   └── test/
-│   │       └── AB/
 │   │
 │   └── interim/
-│       └── sketches/
+│       └── train/
+│               └── A/
+│               └── B/
 │
 ├── notebooks/
 │   ├── 01_exploration.ipynb
