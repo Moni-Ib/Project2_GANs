@@ -2,8 +2,8 @@ import cv2
 import os
 import numpy as np
 
-input_folder = '../../data/raw/cats_test'
-output_folder = '../../data/processed/test'
+input_folder = '../../dataset/raw/cats_test'
+output_folder = '../../dataset/processed/test2'
 
 os.makedirs(output_folder, exist_ok=True)
 
@@ -40,7 +40,8 @@ for filename in os.listdir(input_folder):
         sketch = cv2.cvtColor(combined, cv2.COLOR_GRAY2BGR)
 
         AB = np.concatenate((img, sketch), axis=1)
-
+        #AB = np.concatenate((img, img), axis=1)
+        
         output_path = os.path.join(output_folder, filename)
         cv2.imwrite(output_path, AB)
 
