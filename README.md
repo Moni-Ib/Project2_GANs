@@ -58,67 +58,39 @@ También se implementó una métrica personalizada tipo FID, basada en:
 ## Estructura del proyecto
 
 cats-sketch-gan/
-│
 ├── README.md
 ├── requirements.txt
 ├── setup.py
 ├── .gitignore
-│
 ├── data/
 │   ├── raw/
 │   │   ├── cats_photos/
 │   │   ├── cats_sketches/
 │   │   └── cats_test/
-│   │
 │   ├── processed/
 │   │   ├── train/
 │   │   └── test/
-│   │
 │   └── interim/
 │       └── train/
 │           ├── A/
 │           └── B/
-│
 ├── notebooks/
 │   ├── 01_exploration.ipynb
 │   ├── 02_preprocessing.ipynb
 │   ├── 03_MIH_Modeling.ipynb
 │   └── 03.1_MIH_Modeling.ipynb
-│
 ├── src/
 │   ├── data/
 │   │   ├── make_dataset.py
 │   │   └── make_test_dataset.py
-│   │
 │   ├── models/
 │   │   ├── apdrawing_gan/
-│   │   │   ├── __init__.py
 │   │   │   ├── train.py
-│   │   │   ├── test.py
-│   │   │
-│   │   │   ├── models/
-│   │   │   │   ├── base_model.py
-│   │   │   │   ├── apdrawing_gan_model.py
-│   │   │   │   └── networks.py
-│   │   │   │
-│   │   │   ├── options/
-│   │   │   │   ├── base_options.py
-│   │   │   │   ├── train_options.py
-│   │   │   │   └── test_options.py
-│   │   │   │
-│   │   │   ├── data/
-│   │   │   │   └── aligned_dataset.py
-│   │   │   │
-│   │   │   └── util/
-│   │   │       └── util.py
-│   │   │
+│   │   │   └── test.py
 │   │   ├── train_model.py
 │   │   └── test_model.py
-│
 ├── models/
-│
 ├── reports/
 │   └── figures/
-│
 └── results/
     └── cats_pix2pix/
