@@ -57,8 +57,6 @@ También se implementó una métrica personalizada tipo FID, basada en:
 
 ## Estructura del proyecto
 
-## Estructura del proyecto
-
 ```bash
 cats-sketch-gan/
 ├── README.md
