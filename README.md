@@ -13,23 +13,24 @@ cats-sketch-gan/
 │
 ├── data/
 │   ├── raw/
-│   │   └── cats_photos/
-|   |   └── cats_sketches/
-|   |   └── cats_test/
+│   │   ├── cats_photos/
+│   │   ├── cats_sketches/
+│   │   └── cats_test/
 │   │
 │   ├── processed/
-│   │   ├── train/  
+│   │   ├── train/
 │   │   └── test/
 │   │
 │   └── interim/
 │       └── train/
-│               └── A/
-│               └── B/
+│           ├── A/
+│           └── B/
 │
 ├── notebooks/
 │   ├── 01_exploration.ipynb
 │   ├── 02_preprocessing.ipynb
-│   ├── 03_results_visualization.ipynb
+│   └── 03_MIH_Modeling.ipynb
+│   └── 03.1_MIH_Modeling.ipynb
 │
 ├── src/
 │   ├── data/
@@ -37,7 +38,7 @@ cats-sketch-gan/
 │   │   └── make_test_dataset.py
 │   │
 │   ├── models/
-│   │   ├── apdrawing_gan/       
+│   │   ├── apdrawing_gan/
 │   │   │   ├── __init__.py
 │   │   │   ├── train.py
 │   │   │   ├── test.py
@@ -57,19 +58,17 @@ cats-sketch-gan/
 │   │   │   │
 │   │   │   └── util/
 │   │   │       └── util.py
-│   │
-│   │   ├── train_model.py   
+│   │   │
+│   │   ├── train_model.py
 │   │   └── test_model.py
 │
-├── models/   ← aquí se guardan los .pth
+├── models/          
 │
 ├── reports/
 │   └── figures/
 │
 └── results/
     └── cats_pix2pix/
-
-
 --------
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
