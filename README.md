@@ -1,15 +1,12 @@
 # 🐱 **Cat Sketch Generation with GANs**
-==============================
 
 Este proyecto implementa una Red Generativa Antagónica (GAN) para convertir imágenes de gatos en sketches tipo dibujo a lápiz, utilizando una arquitectura basada en Pix2Pix.
 
 ## Descripción
-------------
 
 El objetivo es aprender una transformación de imágenes (image-to-image translation), donde el modelo recibe una fotografía de un gato y genera su versión en sketch. Para esto se utiliza un enfoque supervisado con pares de imágenes alineadas (foto | sketch).
 
 ## Modelo
-------------
 
 El modelo está compuesto por:
 
@@ -22,7 +19,6 @@ La función de pérdida combina:
 - L1 Loss: mantiene la similitud con la imagen original
 
 ## Dataset
-------------
 
 El dataset está organizado en formato alineado:
 
@@ -38,7 +34,6 @@ A: imagen real (foto)
 B: sketch generado con OpenCV
 
 ## Entrenamiento
-------------
 
 El modelo se entrena con:
 
@@ -48,7 +43,6 @@ El modelo se entrena con:
 - lambda_L1 = 25
 
 ## Evaluación
-------------
 Se evaluó el modelo con métricas cuantitativas y cualitativas:
 
 **Métricas**:
@@ -62,7 +56,6 @@ También se implementó una métrica personalizada tipo FID, basada en:
 - determinante de covarianzas
 
 ## Estructura del proyecto
-------------
 
 cats-sketch-gan/
 │
